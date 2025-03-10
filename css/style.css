@@ -1,0 +1,1330 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400; 1500;1600;1700 & mostrar=intercambiar');
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth; /*Sirve para que haya efecto al momento que desplzase hacia abajo*/
+}
+
+* {padding: 0; margin: 0;}
+
+:root {
+	--primary-color: #d3d327;
+	--secundary-color:#343337;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, a, li, ul, label, input{
+	font-family: 'Work Sans', sans-serif;
+}
+
+
+
+header {
+	position: relative;
+	width: 100%;
+}
+/*--------------------------------------------------------------Navegacion--------------------------------------------------------------*/
+header nav {
+	background: #FFFFFF;
+	/*Propiedades para que la barra de navegacion se quede inmovil*/
+	position: fixed;
+	width: 100%;
+	z-index: 999; /*Capas, colocarle la mas grande para que quede encima de todo*/
+	/*------------------------------------------------------------*/
+
+}
+
+
+
+.container {
+ 	width: 100%;
+ 	max-width: 1200px;
+ 	margin: 0 auto;
+}
+
+
+.fila {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 0 12px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #444;
+	font-weight: 600;
+	transition: .4s;
+	padding: 5px;
+	font-size: 16px;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+nav ul li:nth-child(6) a {
+	color: #FFFFFF;
+	background: var(--secundary-color);
+	padding: 12px 20px;
+	transition: .4s;
+}
+
+nav ul li:nth-child(6) a:hover {
+	border:none ;
+	background: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------Hero---------------------------------------------*/
+
+#hero {
+	width: 100;
+	background: url("../img/hero.png");
+	background-size: cover;
+	padding: 230px 0 180px;
+	color: #FFFFFF;
+}
+
+#hero h1 {
+	font-size: 50px;
+}
+
+#hero p {
+	font-size: 16px;
+	margin: 25px 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+#hero .btn-primary{
+	background: var(--primary-color);
+	padding: 20px 40px;
+	color: #FFFFFF;
+	border: 0;
+	transition: .4s;
+
+}
+
+#hero .btn-primary:hover{
+	padding: 20px 40px;
+	color: var(--primary-color);
+	background: transparent;
+	border: 0;
+	text-decoration: underline;
+}
+
+
+
+#hero .btn-secundary{
+	padding: 20px 40px;
+	color: var(--primary-color);
+	background: transparent;
+	border: 0;
+	text-decoration: underline;
+	transition: .4s;
+}
+
+#hero .btn-secundary:hover{
+	background: var(--primary-color);
+	padding: 20px 40px;
+	color: #FFFFFF;
+	border: 0;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------MAIN--------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------Seccion 1----------------------------------------------------------*/
+main{
+	width: 100%;
+	position: relative;
+}
+
+main #section1 {
+	background: #FFFFFF;
+	width: 100%;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+
+.welcome .info {
+	width: 45%;
+}
+
+
+#section1 .destacados{
+	position: absolute;
+	max-width: 1200px;
+	top: -40px;
+}
+
+#section1 .fila article:nth-child(1) {
+	padding: 40px 50px;
+	text-align: left;
+	box-shadow: 0px 4px 8px -5px #999999;
+	background: #fff;
+}
+
+#section1 .fila article:nth-child(1) h2 {
+	display: flex;
+	align-items: center;
+}
+
+#section1 .fila article:nth-child(1) h2 img {
+	width: 60px;
+	margin-right: 20px;
+}
+
+#section1 .fila article:nth-child(1) p{
+	margin: 25px 0;
+	margin-left: 80px;
+}
+
+#section1 .fila article:nth-child(1) button {
+	margin-left: 80px;
+	background: transparent;
+	border: none;
+	color: var(--primary-color);
+	border-right: 3px solid var(--primary-color);
+	border-left: 3px solid var(--primary-color);
+	padding: 0 5px;
+	font-weight: 600;
+
+}
+
+
+#section1 .fila article:nth-child(2) {
+	
+	background: var(--secundary-color);
+	padding: 40px 50px;
+	text-align: left;
+	box-shadow: 0px 4px 8px -5px #999999;
+	color: #FFFFFF;
+}
+
+#section1 .fila article:nth-child(2) h2 {
+	display: flex;
+	align-items: center;
+}
+
+#section1 .fila article:nth-child(2) h2 img {
+	width: 60px;
+	margin-right: 20px;
+}
+
+#section1 .fila article:nth-child(2) p{
+	margin: 25px 0;
+	margin-left: 80px;
+}
+
+#section1 .fila article:nth-child(2) button {
+	margin-left: 80px;
+	background: transparent;
+	border: none;
+	color: var(--primary-color);
+	border-right: 1px solid var(--primary-color);
+	border-left: 1px solid var(--primary-color);
+	padding: 0 5px;
+	font-weight: 600;
+
+}
+
+
+#section1 .welcome{
+	padding-top: 280px;
+}
+
+#section1 .welcome article:nth-child(1){
+	box-shadow: 0 0 0 0 transparent;
+}
+
+#section1 .welcome article:nth-child(2){
+	background: transparent;
+	box-shadow: 0 0 0 0 transparent;
+
+
+}
+
+.welcome .info h3 {
+	font-size: 40px;
+}
+
+.welcome .info h3 strong{
+	color: var(--primary-color);
+}
+
+
+#section1 .welcome article.info p {
+	margin-left: 0;
+	margin: 15px 0;
+}
+
+#section1 .welcome article.info button{
+	background: #F5F5F5;
+	margin: 0;
+	margin-top: 25px;
+	border: none;
+	padding: 15px 25px;
+	color: var(--secundary-color);
+	transition: .4s;
+}
+
+
+#section1 .welcome article.info button:hover{
+	background: var(--secundary-color);
+	margin: 0;
+	margin-top: 25px;
+	border: none;
+	padding: 15px 25px;
+	color: #FFFFFF;
+}
+
+
+
+#section1 .welcome article.fotos {
+	position: relative;
+
+}
+
+.welcome article.fotos div {
+	position: absolute;
+	z-index: 99;
+	bottom: -96px;
+	left: -62px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------Seccion 2--------------------------------------------------------*/
+#section2 {
+	width: 100%;
+	background: #F5F5F5;
+	padding: 120px 0 210px;
+	position: relative;
+}
+
+#section2 .info-2 {
+	width: 60%;
+}
+
+#section2 .info-2 h4{
+	font-size: 40px;
+}
+
+#section2 .info-2 p {
+	margin: 50px 0;
+}
+
+#section2 .info-2 h4 strong {
+	color: var(--primary-color);
+}
+
+#section2 .fila button {
+	background: var(--secundary-color);
+	color: #ffffff;
+	padding: 20px 40px;
+	border: 0;
+	transition: .4s;
+}
+
+
+#section2 .fila button:hover{
+	background: var(--primary-color);
+}
+
+
+#section2 .fila .card {
+	background: #ffffff;
+	width: 30%;
+	max-width: 270px;
+	padding: 60px 50px;
+	box-shadow: 0px 4px 8px -5px #999999;
+	border-bottom: 4px solid var(--primary-color);
+	position: relative;
+}
+
+#section2 .fila .card::after{
+	position: absolute;
+	width: 0;
+	height: 100%;
+	content: "";
+	left: 0;
+	top: 0;
+	background: var(--secundary-color);
+	z-index: 1;
+	transition: .5s;
+}
+
+#section2 .fila .card:hover::after {
+	width: 100%;
+	cursor: pointer;
+}
+
+#section2 .fila .card:hover h4,
+#section2 .fila .card:hover p,
+#section2 .fila .card:hover ul {
+	color: #fff;
+
+}
+
+#section2 .fila .card img {
+	width: 60px;
+	z-index: 9;
+	position: relative;
+}
+
+#section2 .fila .card h4 {
+	font-size: 22px;
+	margin-top: 15px;
+	position: relative;
+	z-index: 9;
+	transition: .5s;
+}
+
+#section2 .fila .card p{
+	font-weight: 400px;
+	margin: 15px 0;
+	line-height: 24px;
+	position: relative;
+	z-index: 9;
+	transition: .5s;
+}
+
+#section2 .fila .card ul {
+	padding-left: 13px;
+	position: relative;
+	z-index: 9;
+	transition: .5s;
+}
+
+#section2 .fila .card ul li{
+	margin: 15px 0;
+	position: relative;
+	z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------Seccion 3----------------------------------------------*/
+
+#section3 {
+	width: 100%;
+	background: url("../img/bg-section.jpg");
+	background-size: cover;
+	position: relative;
+}
+
+
+.card-vertical {
+	width: 25%;
+	padding:700px 40px 40px ;
+	border-right: 1px #fff outset;
+	background: transparent;
+	transition: .4s;
+	position: relative;
+}.card-vertical:hover {
+	/*background: #ffffff40; si se pone un numero despues de los 6hexadecimales, esto lo toma con un nivel de transparencia*/
+	backdrop-filter: blur(15px); /*El backdrop-filter: blur() sirve para desenfocar el fondo*/
+
+}
+
+.card-vertical h3 {
+	color: var(--primary-color);
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.card-vertical h2 {
+	color: #fff;
+	font-size: 32px;
+
+}
+
+.card-vertical p {
+	margin: 20px 0;
+	font-size: 18px;
+	color: transparent;
+}
+
+.card-vertical button {
+	background: #ffffff40;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	transition: .4s;
+}.card-vertical button:hover {
+	background: var(--primary-color);
+}
+
+
+.card-vertical .info-card {
+	position: absolute;
+	bottom: 30px;
+	transition: .4s;
+}.card-vertical:hover .info-card{
+	bottom: 95px;
+	color: #fff;
+}.card-vertical:hover p {
+	color: #fff;
+}
+
+
+
+
+
+
+/*--------------------------------------------Seccion 4--------------------------------------------*/
+#section4 {
+	width: 100%;
+	padding: 100px 0 170px;
+	background: var(--secundary-color);
+	color: #fff;
+
+}
+
+
+#section4 .fila {
+	justify-content: space-around;
+	align-items: start;
+}
+
+#section4 .info {
+	width: 50%;
+}
+
+#section4 .fondo {
+	width: 50%;
+	position: relative;
+}
+
+#section4 .fondo img {
+	width: 90%;
+}
+
+#section4 h2 {
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+#section4 h2 strong {
+	color: var(--primary-color);
+}
+
+#section4 p {
+	margin: 20px 0;
+	line-height: 35px; /*sirve para dar espacio entre parrafos*/
+
+}
+
+
+.f-orange {
+	background: var(--primary-color);
+	padding: 20px;
+	position: absolute;
+	z-index: 2;
+	top: 307px;
+    left: -601px;
+    /*border: 4px solid black;*/
+}
+
+
+#section4 .f-orange ul li{
+	list-style: none;
+	margin: 20px 70px;
+	
+}
+
+.f-orange ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+}.f-orange ul li a:hover{
+	border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------Seccion 5--------------------------------------------*/
+
+#section5 {
+	width: 100%;
+	padding: 120px 0;
+	text-align: center;
+}
+
+#section5 h2 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+#section5 h3 {
+	font-size: 30px;
+	color: var(--secundary-color);
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+#section5 h2 strong {
+	color: var(--primary-color);
+
+}
+
+#section5 h4 {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+#section5 p {
+	margin-bottom: 15px;
+}
+
+.card-metas {
+	width: 25%;
+	text-align: center;
+	margin: 70px 0;
+}
+
+.card-metas i {
+	font-size: 60px;
+	color: var(--primary-color);
+	margin-bottom: 15px;
+	transition: .4s;
+}.card-metas:hover i{
+	color: var(--secundary-color);
+}
+
+
+
+
+
+/*--------------------------------------------Footer--------------------------------------------*/
+
+
+footer {
+	width: 100%;
+	padding: 100px 0 0;
+	background: #F5F5F5;
+}
+
+footer .fila {
+	border-bottom: 1px solid #999999;
+	padding-bottom: 100px;
+	padding: 0 20px;
+	padding-bottom: 100px;
+	flex-wrap: wrap;
+}
+
+
+footer .card-footer {
+	width: 25%;
+}
+
+.card-footer h2 {
+	color: var(--secundary-color);
+	font-size: 20px;
+	margin-top: 26px;
+	margin-bottom: 35px;
+	font-weight: 600;
+}
+
+.card-footer a {
+	text-decoration: none;
+	color: #8A93A1;
+	transition: .4s;
+}.card-footer a:hover {
+	color: var(--primary-color);
+}
+
+.card-footer p {
+	margin-bottom: 18px;
+	/*line-height: 18px;*/
+}
+
+.card-footer p strong {
+	color: #000;
+	font-weight: 500;
+}
+
+.card-footer img {
+	width: 190px;
+	/*margin-top: 18px;*/
+	margin-bottom:18px;;
+}
+
+#autor {
+	text-align: center;
+	font-size: 16px;
+	padding: 20px 0;
+	color: #8A93A1;;
+
+}
+
+/*---------------------------------------RESPNSIVE DESING---------------------------------------*/
+
+/*--------------------------------------------Celular--------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:600px) {
+
+	header nav {
+		position: relative;
+	}
+
+
+	nav .fila {
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	nav .fila ul {
+		display: block;
+		justify-content: center;
+	}
+
+	nav ul li {
+		margin: 10px 0;
+	}
+
+	nav .fila ul li:nth-child(6) a {
+		padding: 6px 8px;
+	}
+
+	#hero {
+		padding: 40px 20px;
+		background: var(--secundary-color);
+		text-align: center;
+	}
+
+	#hero h1 {
+		font-size: 20px;
+	}
+
+	#hero p {
+		font-size: 16px;
+	}
+
+	#hero .btn-primary, 
+	#hero .btn-secundary {
+		/*font-size: 16px;*/
+		padding: 6px 8px;
+		/*margin-top: 40px;*/
+		/*margin-bottom: 40px;*/
+	}
+
+	#hero .btn-primary:hover,
+	#hero .btn-secundary:hover {
+		/*padding: 15px 30px;*/
+		padding: 6px 8px;
+	}
+
+	main p {
+		font-size: 14px;
+	}
+	
+
+
+	#section1 .destacados {
+		display: block;
+		position: relative;
+		top: 0;
+	}
+
+	#section1 .destacados h2 {
+		font-size: 20px;
+	}
+
+	#section1 .fila article:nth-child(1),#section1 .fila article:nth-child(2) {
+		padding: 25px 0;
+		margin: 0 auto;
+	}
+
+	#section1 .info {
+		width: 95%;
+	}
+
+	#section1 .welcome article.info {
+		text-align: center;
+	}
+
+	#section1 .welcome .fotos img{
+		margin: 0 auto;
+	}
+
+	#section1 .welcome article.fotos {
+		text-align: center;
+	}
+
+	.welcome .info h3 {
+		font-size: 30px;
+	}
+
+	#section1 .welcome {
+		padding-top: 0;
+		display: block;
+		text-align: center;
+	}
+
+	#section1 .welcome article.fotos img {
+		width: 300px;
+	} 
+
+	#section1 .fila article h2 img {
+		margin-right: 10px;
+	}
+
+
+
+	#section1 .welcome article.fotos div img {
+		width: 230px;
+	}
+
+	.welcome article.fotos div {
+		bottom: -92px;
+		left: 82px;
+	}
+
+	.welcome .info h3 {
+		font-size: 20px;
+	}
+
+	#section2 {
+		padding: 100px 0;
+	}
+
+	#section2 .fila  {
+		display: block;
+		text-align: center;
+	}
+
+	#section2 .info-2 h4 {
+		font-size: 35px;
+	 }
+
+	 #section2 .fila button {
+		 padding: 15px 30px;
+		 margin-bottom: 100px;
+	 }
+
+	#section2 .info-2 {
+		width: 100%;
+	}
+
+	#section2 .fila .card {
+		padding: 20px;
+		margin: 10px auto;
+		width: 100%;
+		text-align: left;
+	}
+
+	#section2 .fila .card h4 {
+		font-size: 18px;
+	}
+
+	#section3 {
+		display: none;
+	}
+
+	
+	#section4 {
+		padding: 100px 0;
+		width: 100%;
+	}
+
+	#section4 h2 {
+		margin-top: 0;
+		font-size: 20px;
+	}
+
+	#section4 .fila {
+		padding-left: 0;
+		text-align: center;
+
+	}
+
+	#section4 .fila .info {
+		text-align: center;
+		width: 100%;
+	}
+
+	#section4 .fondo {
+		width: 100%;
+
+	}
+
+	
+	#section4 .fondo img {
+		width: 100%;
+	}
+
+	#section4 .fila {
+		display: block;
+		padding: 0 10px;
+	}
+
+	#section4 .f-orange .fila {
+		display: flex;
+		padding-left: 0;
+
+	}
+
+	.f-orange {
+		position: relative;
+		top: 0;
+		left: 0;
+		border-radius: 2px;
+		width: 100%;
+		padding: 0;
+		
+	}
+
+	
+
+	#section4 .f-orange ul li {
+		/*margin: 25px 28px;*/
+		margin: 25px 0;
+		text-align: left;
+	}
+	.f-orange .primero ul li {
+		margin: 0;
+	}
+
+	#section5 {
+		padding: 50px 0;
+	}
+
+	#section5 h4 {
+		font-size: 18px;
+	}
+
+	#section5 h2 {
+		font-size: 20px;
+	}
+
+	#section5 p {
+		margin: 0 10px 15px;
+	}
+
+	#section5 .fila {
+		display: block;
+	}
+
+	#section5 .card-metas  {
+		/*border: 2px solid blue;*/
+		width: 85%;
+		margin: 30px auto;
+	}
+
+	footer .fila {
+		display: block;
+		padding: 0 65px;
+	}
+
+	footer .card-footer {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	footer #autor p {
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+/*----------------------------------------------Ipad----------------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 819px) {
+
+	header nav {
+		position: relative;
+		margin-bottom: 30px;
+		
+	}
+
+	header nav .fila {
+		display: block;
+		text-align: center;
+
+	}
+
+	header nav .fila ul {
+		justify-content: center;
+	}
+
+	nav ul li:nth-child(6) a {
+		font-size: 10px;
+
+	}
+
+	#section1 .destacados {
+		display: block;
+		position: relative;
+		top: 0;
+	}
+
+	#hero {
+		padding: 85px 20px;
+		position: relative;
+	}
+
+	#hero h1 {
+		font-size: 30px;
+	}
+
+	#hero p {
+		font-size: 12px;
+	}
+
+	#hero .btn-primary,
+	#hero .btn-secundary {
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+	#hero .btn-primary:hover,
+	#hero .btn-secundary:hover {
+		padding: 10px 20px;
+	}
+
+	#section1 .welcome {
+		padding-top: 0;
+		display: block;
+	}
+
+	#section1 .welcome article:nth-child(1) {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+
+
+
+	#section1 .welcome article.info button {
+		margin: 25px 0;
+	}
+
+	#section1 .welcome article.fotos {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.welcome article.fotos div {
+		bottom: -188px;
+    	left: 129px;
+	}
+
+	main #section1 {
+		padding-bottom: 200px;
+	}
+
+	#section1 .welcome {
+		padding: 50px 0 ;
+	}
+
+	#section2 {
+		padding: 100px 0;
+	}
+
+	#section2 .fila:nth-child(1) {
+		justify-content: space-evenly;
+	}
+
+	#section2 .fila:nth-child(2) {
+		display: block;
+	}
+
+	#section2 .fila .card {
+		max-width: 350px;
+		width: 100%;
+		margin: 30px auto;
+
+	}
+
+	#section3 {
+		display: none;
+	}
+
+	#section4 {
+		padding: 50px 0;
+	}
+
+	#section4 .fila {
+		display: block;
+		text-align: center;
+	}
+
+	#section4 .info {
+		width: 100%;
+	}
+
+	#section4 .fondo {
+		width: 100%;
+	}
+
+	.f-orange {
+		margin: 0 auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		
+		padding: 0;
+	}
+
+	#section4 .f-orange .fila {
+		display: flex;
+	}
+
+	.f-orange .fila ul {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+	}
+
+	#section5 {
+		padding: 50px 0;
+	}
+
+	#section5 .fila {
+		flex-wrap: wrap;
+
+	}
+
+	#section5 .fila .card-metas {
+		width: 50%;
+		margin: 35px 0 ;
+	}
+	footer .fila {
+		flex-wrap: wrap;
+	}
+
+	footer .fila .card-footer {
+		width: 50%;
+	}
+
+}
+
+/*---------------------------------------------Tablet---------------------------------------------*/
+@media screen and (min-width:820px) and (max-width:1200px) {
+	header nav {
+		position: relative;
+	}
+
+
+	nav .fila {
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+	nav .fila ul {
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	nav .fila ul li:nth-child(6) a {
+		padding: 10px 18px;
+	}
+
+	#hero {
+		padding: 100px 20px;
+	}
+
+	#hero h1 {
+		font-size: 36px;
+	}
+
+	#hero p {
+		font-size: 13px;
+	}
+
+	#hero .btn-primary, #hero .btn-secundary{
+		padding: 15px 30px;
+	}
+	#hero .btn-secundary:hover {
+		padding: 15px 30px;
+	}
+
+	#section1 .destacados{
+		display: block;
+		position: relative;
+		top: 0;
+	}
+
+	#section1 .welcome {
+		padding-top: 0;
+	}
+
+	#section1 .welcome article.fotos img {
+		width: 235px;
+	}
+
+	#section1 .welcome article.fotos div img {
+		width: 194px;
+	}
+
+	.welcome article.fotos div {
+		bottom: -19px;
+		left: -30px;
+	}
+
+	.welcome .info h3 {
+		font-size: 39px;
+	}
+
+	#section2 {
+		padding: 122px 0 44px;
+	}
+
+	#section2 .fila {
+		justify-content: space-around;
+
+	}
+
+	#section2 .fila .card {
+		padding: 35px;
+		margin: 0 5px;
+	}
+
+	#section2 .fila .card h4 {
+		font-size: 18px;
+	}
+
+	#section3 {
+		display: none;
+	}
+
+	
+	#section4 {
+		padding: 100px 0;
+	}
+
+	#section4 h2 {
+		margin-top: 0;
+	}
+
+	#section4 .fila {
+		padding-left: 30px;
+
+	}
+
+	#section4 .fila .info {
+		text-align: center;
+		width: 100%;
+	}
+
+	#section4 .fila .fondo {
+		width: 100%;
+	}
+
+	
+	#section4 .fondo img {
+		width: 390px;
+	}
+
+	#section4 .fila {
+		display: block;
+	}
+
+	#section4 .f-orange .fila {
+		display: flex;
+		padding-left: 0;
+
+	}
+
+	.f-orange {
+		top: 182px;
+		left: 240px;
+		padding: 10px;
+		border-radius: 2px;
+
+	}
+
+	#section4 .f-orange ul li {
+		list-style: none;
+		margin: 10px 36px;
+
+	}
+
+	#section5 h4 {
+		font-size: 18px;
+	}
+
+	footer .card-footer {
+		width: 30%;
+	}
+
+}
